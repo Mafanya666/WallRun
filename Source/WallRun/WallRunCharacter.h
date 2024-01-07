@@ -14,6 +14,14 @@ class UMotionControllerComponent;
 class UAnimMontage;
 class USoundBase;
 
+UENUM()
+enum class EWallRunSide : uint8
+{
+	None,
+	Left,
+	Right
+};
+
 UCLASS(config = Game)
 class AWallRunCharacter : public ACharacter
 {
@@ -102,4 +110,6 @@ public:
 private:
 	UFUNCTION()
 	void OnPlayerCapsuleHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
+
+	bool IsSurfaceWallRunable(const FVector& SurfaceNormal);
 };
