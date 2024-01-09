@@ -1,0 +1,27 @@
+head     1.12;
+access   ;
+symbols  ;
+locks    ;comment  @@;
+
+
+1.12
+date     2024.01.09.20.51.34;  author p4;  state Exp;
+branches ;
+next     ;
+
+
+desc
+@@
+
+
+1.12
+log
+@@
+text
+@// Copyright Epic Games, Inc. All Rights Reserved.
+
+#include "WallRun.h"
+#include "Modules/ModuleManager.h"
+
+IMPLEMENT_PRIMARY_GAME_MODULE( FDefaultGameModuleImpl, WallRun, "WallRun" );
+ @

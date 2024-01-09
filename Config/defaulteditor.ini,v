@@ -1,0 +1,28 @@
+head     1.12;
+access   ;
+symbols  ;
+locks    ;comment  @@;
+
+
+1.12
+date     2024.01.09.20.51.32;  author p4;  state Exp;
+branches ;
+next     ;
+
+
+desc
+@@
+
+
+1.12
+log
+@@
+text
+@[UnrealEd.SimpleMap]
+SimpleMapName=/Game/FirstPerson/Maps/FirstPersonExampleMap
+
+[EditoronlyBP]
+bAllowClassAndBlueprintPinMatching=true
+bReplaceBlueprintWithClass= true
+bDontLoadBlueprintOutsideEditor= true
+bBlueprintIsNotBlueprintType= true@

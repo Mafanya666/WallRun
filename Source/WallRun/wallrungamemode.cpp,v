@@ -1,0 +1,38 @@
+head     1.12;
+access   ;
+symbols  ;
+locks    ;comment  @@;
+
+
+1.12
+date     2024.01.09.20.51.34;  author p4;  state Exp;
+branches ;
+next     ;
+
+
+desc
+@@
+
+
+1.12
+log
+@@
+text
+@// Copyright Epic Games, Inc. All Rights Reserved.
+
+#include "WallRunGameMode.h"
+#include "WallRunHUD.h"
+#include "WallRunCharacter.h"
+#include "UObject/ConstructorHelpers.h"
+
+AWallRunGameMode::AWallRunGameMode()
+	: Super()
+{
+	// set default pawn class to our Blueprinted character
+	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnClassFinder(TEXT("/Game/FirstPersonCPP/Blueprints/FirstPersonCharacter"));
+	DefaultPawnClass = PlayerPawnClassFinder.Class;
+
+	// use our custom HUD class
+	HUDClass = AWallRunHUD::StaticClass();
+}
+@

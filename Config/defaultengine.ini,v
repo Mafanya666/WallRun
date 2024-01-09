@@ -1,0 +1,75 @@
+head     1.14;
+access   ;
+symbols  ;
+locks    ;comment  @@;
+
+
+1.14
+date     2024.01.09.21.44.31;  author p4;  state Exp;
+branches ;
+next     1.12;
+
+1.12
+date     2024.01.09.20.51.32;  author p4;  state Exp;
+branches ;
+next     ;
+
+
+desc
+@@
+
+
+1.14
+log
+@@
+text
+@[/Script/Engine.CollisionProfile]
++Profiles=(Name="Projectile",CollisionEnabled=QueryOnly,ObjectTypeName="Projectile",CustomResponses=,HelpMessage="Preset for projectiles",bCanModify=True)
++DefaultChannelResponses=(Channel=ECC_GameTraceChannel1,Name="Projectile",DefaultResponse=ECR_Block,bTraceType=False,bStaticObject=False)
++EditProfiles=(Name="Trigger",CustomResponses=((Channel=Projectile, Response=ECR_Ignore)))
+
+[/Script/EngineSettings.GameMapsSettings]
+EditorStartupMap=/Game/FirstPersonCPP/Maps/WallRunGvm.WallRunGvm
+LocalMapOptions=
+TransitionMap=
+bUseSplitscreen=True
+TwoPlayerSplitscreenLayout=Horizontal
+ThreePlayerSplitscreenLayout=FavorTop
+GameInstanceClass=/Script/Engine.GameInstance
+GameDefaultMap=/Game/FirstPersonCPP/Maps/WallRunGvm.WallRunGvm
+ServerDefaultMap=/Engine/Maps/Entry
+GlobalDefaultGameMode=/Script/WallRun.WallRunGameMode
+GlobalDefaultServerGameMode=None
+
+[/Script/IOSRuntimeSettings.IOSRuntimeSettings]
+MinimumiOSVersion=IOS_12
+
+
+[/Script/HardwareTargeting.HardwareTargetingSettings]
+TargetedHardwareClass=Desktop
+AppliedTargetedHardwareClass=Desktop
+DefaultGraphicsPerformance=Maximum
+AppliedDefaultGraphicsPerformance=Maximum
+
+[/Script/Engine.Engine]
++ActiveGameNameRedirects=(OldGameName="TP_FirstPerson",NewGameName="/Script/WallRun")
++ActiveGameNameRedirects=(OldGameName="/Script/TP_FirstPerson",NewGameName="/Script/WallRun")
++ActiveClassRedirects=(OldClassName="TP_FirstPersonProjectile",NewClassName="WallRunProjectile")
++ActiveClassRedirects=(OldClassName="TP_FirstPersonHUD",NewClassName="WallRunHUD")
++ActiveClassRedirects=(OldClassName="TP_FirstPersonGameMode",NewClassName="WallRunGameMode")
++ActiveClassRedirects=(OldClassName="TP_FirstPersonCharacter",NewClassName="WallRunCharacter")
+
+@
+
+
+1.12
+log
+@@
+text
+@d7 1
+a7 1
+EditorStartupMap=/Game/FirstPersonCPP/Maps/FirstPersonExampleMap
+d14 1
+a14 1
+GameDefaultMap=/Game/FirstPersonCPP/Maps/FirstPersonExampleMap
+@

@@ -1,0 +1,27 @@
+head     1.12;
+access   ;
+symbols  ;
+locks    ;comment  @@;
+
+
+1.12
+date     2024.01.09.20.51.32;  author p4;  state Exp;
+branches ;
+next     ;
+
+
+desc
+@@
+
+
+1.12
+log
+@@
+text
+@[ProjectSettings]
+ProjectID=(A=1823396784,B=1298598689,C=1743498150,D=-2048051708)
+ProjectName=First Person Template
+
+[/Script/EngineSettings.GeneralProjectSettings]
+ProjectID=F67B40C648DED0682EF7DF9430444C32
+@
